@@ -17,7 +17,7 @@ int main() {
             verificaprimo = 1;
             while (verificaprimo < divisore) {
                 if (divisore % verificaprimo != 0)
-                    cout<< "il numero è divisibile per " << divisore << ", che è primo";
+                    cout<< "il numero Ã¨ divisibile per " << divisore << ", che Ã¨ primo";
                 verificaprimo++;
             }
             divisore++;
