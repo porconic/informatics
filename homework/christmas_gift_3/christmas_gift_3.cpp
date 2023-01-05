@@ -54,6 +54,10 @@ public:
 	}
 };
 
+int main() {
+	point bisector_second_forth_quadrant[] = { { -1, 1 }, { 3, -3 } };
+}
+
 //	Ex.6
 int max_sum_row(int mat[][6], int num_rows) {
 	int max_sum, sum, max_index{};
