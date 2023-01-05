@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//	Ex.0
+//	Ex.1
 unsigned long long factorial_tail_recursive(unsigned n, unsigned long long accumulator) {
 	if (n == 1)
 		return accumulator;
