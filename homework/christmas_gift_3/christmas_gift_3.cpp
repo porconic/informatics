@@ -49,8 +49,8 @@ public:
 		this->y = y;
 	}
 
-	float distance() {
-		return sqrt(this->x * this->x + this->y * this->y);
+	float distance(const point& p) {
+		return sqrt((this->x - p.x) * (this->x - p.x) + (this->y - p.y) * (this->y - p.y));
 	}
 };
 
