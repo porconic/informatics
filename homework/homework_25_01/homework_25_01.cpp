@@ -80,7 +80,7 @@ run -> runna il programma
 
 //	Ex.10
 int main() {
-	int* v[5];
+	int* v[6];
 	for (int i = 0; i < 5; i++) {
 		int* v[i] = (int*)calloc(sizeof(int)*6);
 	}
