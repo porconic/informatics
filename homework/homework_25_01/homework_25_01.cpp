@@ -3,7 +3,7 @@ using namespace std;
 
 //	Ex.0
 /*
-Un debugger è un programma che permette il debug di ogni linea di codice, ovvero l'analisi passo per passo di
+Un debugger Ã¨ un programma che permette il debug di ogni linea di codice, ovvero l'analisi passo per passo di
 variabili e cicli.
 */
 
@@ -19,16 +19,16 @@ Disassemblare significa convertire le istruzioni da linguaggio macchina a lingua
 
 //	Ex.3
 /*
-La memoria heap è una memoria che, a differenza dello stack, va gestita manualmente: dichiarare i vari tipi con
-malloc, calloc... per poi liberare lo spazio nel momento in cui non sono più utili. 
-Si possono inoltre allungare o restringere le dimensioni degli array, rendendo questa memoria molto più flessibile.
+La memoria heap Ã¨ una memoria che, a differenza dello stack, va gestita manualmente: dichiarare i vari tipi con
+malloc, calloc... per poi liberare lo spazio nel momento in cui non sono piÃ¹ utili. 
+Si possono inoltre allungare o restringere le dimensioni degli array, rendendo questa memoria molto piÃ¹ flessibile.
 */
 
 //	Ex.4
 /*
-La memoria heap è uno spazio di memoria che va gestito manualmente poiché vanno dichirate le variabile inserite
+La memoria heap Ã¨ uno spazio di memoria che va gestito manualmente poichÃ© vanno dichirate le variabile inserite
 all'interno dell'heap che poi andranno liberate manualmente con free(nome_variabile); se questo non accadesse e 
-continuassimo a scrivere sull'heap, che ha una grandezza variabile da pc a pc, il programma crasherebbe poiché non
+continuassimo a scrivere sull'heap, che ha una grandezza variabile da pc a pc, il programma crasherebbe poichÃ© non
 avremmo liberato gli spazi precedenti, avremmo invece riempito la memoria restante.
 */
 
@@ -47,20 +47,20 @@ pointers function(char* c[], int* i[], double* d[], int n){
 
 //	Ex.6
 /*
-"Memory leak", tradotto letteralmente in "perdita di memoria" è il fenomeno che definisce quando nell'heap si alloca della
+"Memory leak", tradotto letteralmente in "perdita di memoria" Ã¨ il fenomeno che definisce quando nell'heap si alloca della
 memoria, non venendo poi deallocata, causando uno spreco di memoria ed un possibile crash nel momento in cui l'heap non
-avrà più spazio a disposizione.
-E' un grave errore logico che può causare, come detto in precedenza, ad un crash del programma.
+avrÃ  piÃ¹ spazio a disposizione.
+E' un grave errore logico che puÃ² causare, come detto in precedenza, ad un crash del programma.
 */
 
 //	Ex.7
 /*
-Non è stata allocata alcuna memoria nell'heap, quindi il free non sta liberando alcuna memoria inerente al programma.
+Non Ã¨ stata allocata alcuna memoria nell'heap, quindi il free non sta liberando alcuna memoria inerente al programma.
 */
 
 //	Ex.8
 /*
-Si sta assegnando un indirizzo che punta allo stack ad uno che punta all'heap.
+Si sta liberando un puntatore che punta allo stack e non piu all'heap.
 */
 
 //	Ex.9
