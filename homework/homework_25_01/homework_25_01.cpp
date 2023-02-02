@@ -82,7 +82,10 @@ run -> runna il programma
 int main() {
 	int* v[6];
 	for (int i = 0; i < 5; i++) {
-		int* v[i] = (int*)calloc(sizeof(int)*6);
+		v[i] = (int*)calloc(6, sizeof(int));
+	}
+	for (int i = 0; i < 5; i++) {
+		free(v[i]);
 	}
 }
 
@@ -93,10 +96,10 @@ struct circle {
 };
 
 int main() {
-	struct circle* c = (circle*)malloc(sizeof(double) * 3);
+	struct circle* c = (struct circle*)malloc(sizeof(struct circle));
 }
 
 //	Ex.12
 /*
-Assegnazione di una costante ad un puntatore.
+Cambio di valore ad un indirizzo puntato casuale.
 */
