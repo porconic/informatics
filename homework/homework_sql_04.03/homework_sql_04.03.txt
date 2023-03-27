@@ -1,0 +1,41 @@
+#	Ex.0
+CREATE TABLE employee (ssn INT AUTO_INCREMENT, name VARCHAR(20), surname VARCHAR(20), salary DECIMAL(6, 2), PRIMARY KEY(ssn));
+
+#	Ex.1
+INSERT INTO employee(name, surname, salary) VALUES('Nicola', 'Baschiera', 800);
+INSERT INTO employee(name, surname, salary) VALUES('Mattia', 'Lanaro', 200);
+INSERT INTO employee(name, surname, salary) VALUES('Jacopo', 'Monti', 400);
+INSERT INTO employee(name, surname, salary) VALUES('Filippo', 'Bizzotto', 7.42);
+
+#	Ex.2
+SELECT MAX(salary) FROM employee;
+
+#	Ex.3
+SELECT AVG(salary) FROM employee;
+
+#	Ex.4
+SELECT MIN(salary) FROM employee;
+
+#	Ex.5
+SELECT * FROM employee WHERE salary = (SELECT MAX(salary) FROM employee);
+
+#	Ex.6
+SELECT surname FROM employee WHERE salary = (SELECT MIN(salary) FROM employee);
+
+#	Ex.7
+SELECT surname FROM employee ORDER BY(surname);
+
+#	Ex.8
+ALTER TABLE employee ADD COLUMN residenceCity VARCHAR(20);
+
+#	EX.9
+UPDATE employees SET residenceCity = 'Onè di Fonte' WHERE ssn = 1;
+UPDATE employees SET residenceCity = 'Marostica' WHERE ssn = 2;
+UPDATE employees SET residenceCity = 'Ca Rainati' WHERE ssn = 3;
+UPDATE employees SET residenceCity = 'San Giuseppe' WHERE ssn = 4;
+
+#	Ex.10
+SELECT COUNT(*) FROM employee GROUP BY(residenceCity);
+
+#	Ex.11
+SELECT DISTINCT name FROM employee;
