@@ -31,7 +31,7 @@ ALTER TABLE employee ADD COLUMN residenceCity VARCHAR(20);
 #	EX.9
 UPDATE employees SET residenceCity = 'Onè di Fonte' WHERE ssn = 1;
 UPDATE employees SET residenceCity = 'Marostica' WHERE ssn = 2;
-UPDATE employees SET residenceCity = 'Ca Rainati' WHERE ssn = 3;
+UPDATE employees SET residenceCity = 'Casoni' WHERE ssn = 3;
 UPDATE employees SET residenceCity = 'San Giuseppe' WHERE ssn = 4;
 
 #	Ex.10
